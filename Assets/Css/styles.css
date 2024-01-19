@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    /* text-transform: uppercase; */
+    padding: 32px;
+    background-color: #102947;
+    color: white;
+    border-bottom: 4px solid #486c89;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:visited {
+    color: white;
+}
+
+
+
+#tipo_despensa {
+    /* color: white; */
+}
+
+
+/* GALLERY */
+.actual-year {
+    text-align: center;
+    background-color: rgba(213, 172, 166, 0.5);
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    max-width: 230px;
+    margin: 4px auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 270px;
+    /* height: 250px; */
+    object-fit: cover;
+}
+
+.gallery button {
+    padding: 0;
+    border: none;
+    background-color: #f5f6f7;
+}
+
+/* MAIN-MES */
+.main-Mes {
+    text-align: center;
+}
+
+.main-mes-itens {
+    background-color: rgb(180, 72, 72);
+    max-width: 900px;
+    margin: 1.6rem auto;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px black;
+    color: white;
+}
+
+.main-mes-itens img {
+    margin-top: 2px;
+}
+
+.main-mes-itens button {
+    background-color: #d5aca6;
+    border: 3px solid #d5aca6;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    box-shadow: 0 0 5px black;
+}
+
+/* POUPANÇAS */
+
+#dinheiro-total-Resultado {
+    color: #e61e19;
+}
+
+
+/* MAIN-ALTERAR */
+.main-alterar {
+    text-align: center;
+    /* margin-top: 116px; */
+    background-color: #bd9c9c;
+    width: 800px;
+    margin: 116px auto;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px black;
+}
+
+.main-alterar form {
+
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main-alterar form label,
+input {
+    /* background-color: purple; */
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.main-alterar form select {
+    width: 182px;
+    padding: 5px;
+}
+
+.resultado {
+    color: #0ceb98;
+}
+
+
+
+/* NAME FOOTER */
+
+#name_footer{
+    color: white;
+}
+
+
+/* CHARTS / GRÁFICOS */
+
+.graficos .mychartBar, .chartPie, .stackedChart{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gasto-anual{
+    text-align: center;
+}
+
+.mychartBar {}
+
+.main-alterar form button {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 110px;
+    box-shadow: 0 0 1px black;
+    font-size: 16px;
+    padding: 0.4rem;
+    background-color: rgb(223, 69, 69);
+}
+
+.main-alterar form input {
+    width: -webkit-fill-available;
+}
+
+/* MAIN-DESPENSAS */
+.main-despensas {
+    text-align: center;
+}
+
+.main-despensas h2 {}
+
+.table-dinheiroTotal {
+    background-color: cadetblue;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 0.5rem;
+    width: 772px;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+}
+
+/* Da poupança */
+.table-dinheiroTotal input {
+    padding: 0.2rem;
+    margin-top: 53px;
+}
+
+.table-dinheiroTotal button {
+    background-color: #1fe098;
+    border: 1px solid #1fe098;
+    border-radius: 0.5rem;
+    width: 68px;
+    padding: 5px;
+    margin-top: 1em;
+
+}
+
+.table-dinheiroTotal th {
+    color: white;
+}
+
+.table-dinheiroTotal thead th {
+    border-bottom: 1px solid white;
+    color: black;
+}
+
+.table-dinheiroTotal tbody th,
+input {
+    padding-top: 10px;
+}
+
+/* TABLE-SAIDA */
+
+.table-saida {
+    background-color: #c79797;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 0.5rem;
+    width: 772px;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+}
+
+
+.table-saida th {
+    color: white;
+}
+
+.table-saida tbody th {
+    color: white;
+}
+
+
+.table-saida thead th {
+    border-bottom: 1px solid white;
+    color: black;
+}
+
+
+.icon_exclusao {
+    height: 0.6cm;
+    border-radius: 0.25rem;
+}
+
+.table-saida tbody form button {
+    box-shadow: 0 0 5px black;
+    margin-top: 10px;
+}
+
+.table-saida tbody input {
+    padding: 0.3rem;
+}
+
+/* BOTOES REGISTRO */
+
+.botoes-registro {
+    display: -webkit-inline-box;
+    margin: 12px 0;
+    padding-right: 5px;
+}
+
+.botoes-registro button {
+    margin-right: 3rem;
+    border-radius: 0.5rem;
+    width: 110px;
+    box-shadow: 0 0 3px black;
+    font-size: 16px;
+    padding: 0.4rem;
+}
+
+.botao-registrar {
+    background-color: #1fe098;
+    border: 1px solid #1fe098;
+}
+
+.botao-cancelar {
+    background-color: #b7b6b4;
+    border: 1px solid #b7b6b4;
+}
+
+.botao-registrar,
+.botao-cancelar {
+    margin-bottom: 30px;
+}
+
+.botao-novoRegistro {
+    background-color: #739ac0;
+    border: 1px solid #739ac0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 3px black;
+    padding: 0.4rem;
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.botao-novoRegistro:last-of-type {
+    margin-bottom: 50px;
+}
+
+
+/* ALERTS */
+
+.mensagem-alertDanger {
+    background-color: #dc3545;
+    /* color:#5b1017 ; */
+    color: white;
+    border-color: #510e15;
+    padding: 16px;
+    /* border-radius: 0.5rem; */
+}
+
+.mensagem-alertSucess {
+    background-color: #18ac75;
+    padding: 16px;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* INPUT-PESQUISAR */
+.input-pesquisar {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    /* background-color: red; */
+}
+
+.input-pesquisar-items {
+    width: 100px;
+    font-size: 17px;
+}
+
+.input-pesquisar button {
+    background-color: #1fe098;
+    border: 1px solid #1fe098;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-pesquisar button:hover {
+    background-color: #18ac75;
+    border: 1px solid #18ac75;
+}
+
+/* NAV-BAR */
+.nav-bar {
+    background-color: #fcacac;
+    ;
+    width: 100%;
+    text-align: end;
+    padding: 3px 0;
+
+}
+
+.nav-bar form {
+    display: inline-block;
+    /* width: 100px; */
+}
+
+.nav-bar button {
+    height: 47px;
+    font-size: 16px;
+}
+
+.nav-bar-selecionado {
+    background-color: #33cc3d;
+    border: 1px solid #33cc3d;
+    border-radius: 5px;
+    color: white;
+}
+
+.nav-bar-selecionado:hover {
+    background-color: #238b29;
+    border: 1px solid #238b29;
+}
+
+.nav-bar-desmarcado:hover {
+    background-color: #595256;
+    border: 1px solid #595256;
+}
+
+.nav-bar-desmarcado {
+    background-color: #857a81;
+    border: 1px solid #857a81;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/*  VOLTAR MENU */
+
+.voltar-menu {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    color: #345474;
+}
+
+/* ALTERAR SENHA */
+
+.Senha-group {
+    background-color: #345474;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 3px 3px 3px black;
+}
+
+.main-Senha {
+    background-color: #345474;
+    text-align: center;
+    max-width: 850px;
+    margin: 103px auto;
+    color: white;
+}
+
+.main-Senha input {
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 2rem;
+}
+
+
+
+.main-Senha button {
+    border: 0 solid black;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    padding: 8px 5px;
+    background-color: #dc3545;
+    margin: 0.5rem 0;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
