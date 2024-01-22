@@ -2,7 +2,7 @@
 session_start();
 
 $servername = "localhost";
-$dbname = "controle-financeiro";
+$dbname = "planeja-financas";
 $username = "root";
 $pwd = "";
 
