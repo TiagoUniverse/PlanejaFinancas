@@ -59,20 +59,20 @@ img {
   position: relative;
   height: 100vh;
   width: 1194px;
-  background: url("https://i.ibb.co/RhMZprS/jony-Image2-1.png") no-repeat center center scroll;
+  background: url("../../img/login-wallpaper.jpg") no-repeat center center scroll;
   background-size: cover;
   float: left;
   -webkit-animation: bgslide 2.3s forwards;
           animation: bgslide 2.3s forwards;
 }
 .bg-illustration img {
-  width: 248px;
+  width: 700px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  height: auto;
-  margin: 19px 0 0 25px;
+  height: 500px;
+  margin: 19px 0 0 -20px;
 }
 
 @-webkit-keyframes bgslide {
@@ -260,7 +260,7 @@ img {
   }
   .bg-illustration {
     float: none;
-    background: url("https://i.ibb.co/rwncw7s/bg-mobile.png") center center;
+    background: url("../../img/login-wallpaper.jpg") center center;
     background-size: cover;
     -webkit-animation: slideIn 0.8s ease-in-out forwards;
             animation: slideIn 0.8s ease-in-out forwards;
@@ -295,6 +295,7 @@ img {
   .bg-illustration .burger-btn span:nth-child(3) {
     width: 20px;
   }
+
 
   .login {
     float: none;
