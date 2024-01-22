@@ -28,7 +28,7 @@ $nome_dividido = explode(" ", $_SESSION['user_name']);
 
 <header>
   <a href="home.php">
-    <h1>Controle monetário</h1>
+    <h1>Planeja Finanças</h1>
   </a>
 </header>
 <div class="nav-bar">
@@ -63,7 +63,7 @@ $nome_dividido = explode(" ", $_SESSION['user_name']);
       <img src="../../Assets//Icons//dropdown.png">
     </button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#"><?php echo "Perfil: <b>" . $nome_dividido[0] . "</b>"; ?></a>
+      <a href="#"><?php echo "Nome: <b>" . $nome_dividido[0] . "</b>"; ?></a>
       <a href="trocar-senha.php">Alterar senha</a>
       <a href="logoff.php">Sair</a>
     </div>
