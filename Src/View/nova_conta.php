@@ -54,7 +54,10 @@ $Usuario_repositorio = new Usuario_repositorio();
 
           $mensagemVermelha = true;
 
-          if ($Usuario_repositorio->verificar_existe($_POST['email'], $pdo)) {
+
+          if ($_POST['senha'] != $_POST['senhaRepetida']){
+            $mensagem = "As senhas precisam ser iguais!";
+          } else if ($Usuario_repositorio->verificar_existe($_POST['email'], $pdo)) {
             $mensagem = "Esse e-mail já foi cadastrado. Por favor, crie uma conta com um e-mail diferente";
           } else {
             $mensagemVermelha = false;
@@ -83,6 +86,8 @@ $Usuario_repositorio = new Usuario_repositorio();
             <input type="email" placeholder="E-mail" name="email" required>
             <p>Digite a sua senha:</p>
             <input type="password" placeholder="Senha" name="senha" require>
+            <p>Repita a sua senha:</p>
+            <input type="password" placeholder="Digite novamente a sua senha" name="senhaRepetida" require>
 
             <button type="submit">Criar conta</button>
 
