@@ -19,6 +19,12 @@ $Usuario_repositorio = new Usuario_repositorio();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../Assets//Css//login.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,500;0,900;1,500;1,900&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <title>Criar conta</title>
 </head>
@@ -26,7 +32,7 @@ $Usuario_repositorio = new Usuario_repositorio();
 <body>
   <div class="parent clearfix">
     <div class="bg-illustration">
-      <img src="https://i.ibb.co/Pcg0Pk1/logo.png" alt="logo">
+      <img src="../../Assets/img/Tiago Lopes font.png" alt="logo">
 
       <div class="burger-btn">
         <span></span>
@@ -38,7 +44,7 @@ $Usuario_repositorio = new Usuario_repositorio();
 
     <div class="login">
       <div class="container">
-        <h1>Controle<br />monetário: criar conta</h1>
+        <h1>Criar nova conta</h1>
 
         <a href="login.php"> Voltar</a> <br><br>
 
@@ -71,11 +77,11 @@ $Usuario_repositorio = new Usuario_repositorio();
         <div class="login-form">
           <form action="nova_conta.php" method="post">
             <input type="hidden" name="status_criacao" value="CRIANDO CONTA">
-            <p>Digite o seu nome</p>
+            <p>Digite o seu nome:</p>
             <input type="text" placeholder="Nome:" name="nome" required>
-            <p>Digite um e-mail para acesso</p>
+            <p>Digite um e-mail para acesso:</p>
             <input type="email" placeholder="E-mail" name="email" required>
-            <p>Digite a sua senha</p>
+            <p>Digite a sua senha:</p>
             <input type="password" placeholder="Senha" name="senha" require>
 
             <button type="submit">Criar conta</button>
